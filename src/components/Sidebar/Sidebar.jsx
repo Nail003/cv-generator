@@ -1,27 +1,17 @@
-import React, { useState } from "react";
-import { Button, Collapser, FormEducation, FormPersonal } from "../";
+import { Collapser, FormPersonal, SectionFormEducation } from "../";
 import "./sidebar.css";
 
 const Sidebar = () => {
-    const [educationForms, setEducationForms] = useState([]);
-
-    function handleAddEducation() {
-        setEducationForms((prev) => [...prev, false]);
-    }
-
     return (
-        <div className="sidebar">
+        <section className="sidebar">
             <Collapser title="Personal Info">
                 <FormPersonal />
             </Collapser>
             <Collapser title="Education">
-                <Button onClick={handleAddEducation}>Add Education</Button>
-                {educationForms.map(() => (
-                    <FormEducation />
-                ))}
+                <SectionFormEducation />
             </Collapser>
             <Collapser title="Work Experience"></Collapser>
-        </div>
+        </section>
     );
 };
 

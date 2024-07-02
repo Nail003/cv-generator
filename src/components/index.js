@@ -6,6 +6,7 @@ import Collapser from "./Collapser/Collapser";
 import FormEducation from "./FormEducation/FormEducation";
 import FormPersonal from "./FormPersonal/FormPersonal";
 import Input from "./Input/Input";
+import SectionFormEducation from "./SectionFormEducation/SectionFormEducation";
 import Sidebar from "./Sidebar/Sidebar";
 
 export {
@@ -18,4 +19,5 @@ export {
     FormPersonal,
     FormEducation,
     Button,
+    SectionFormEducation,
 };
