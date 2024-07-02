@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./collapser.css";
 
 const Collapser = ({ title, children }) => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     function handleButtonClick() {
         setCollapsed((prev) => !prev);
