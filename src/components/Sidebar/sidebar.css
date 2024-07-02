@@ -1,0 +1,6 @@
+.sidebar {
+    flex: 1;
+
+    min-width: 320px;
+    border-right: 4px solid var(--grey-light);
+}

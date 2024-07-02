@@ -1,0 +1,30 @@
+.input {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__label {
+    font-size: 1.3rem;
+}
+
+.input__input {
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    background-color: var(--white-glass);
+}
+
+.input__input:focus {
+    border: 2px solid var(--black-pure);
+}
+
+.input__input::placeholder {
+    color: var(--grey-dark);
+}

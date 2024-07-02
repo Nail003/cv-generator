@@ -1,0 +1,66 @@
+.collapser {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-bottom: 16px;
+}
+
+.collapser__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 2px 8px;
+    border: none;
+    border-bottom: 2px solid var(--black-pure);
+    outline: none;
+
+    color: var(--white);
+    background: none;
+    cursor: pointer;
+}
+
+.collapser__title {
+    font-weight: 100;
+}
+
+.collapser__button:hover,
+.collapser__button:focus {
+    background-color: var(--grey);
+}
+
+.collapser__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+    transform-origin: top;
+}
+
+.collapsed {
+    animation: collapse 200ms ease-in forwards;
+}
+
+.expand {
+    animation: expand 200ms ease-out forwards;
+}
+
+@keyframes collapse {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+        display: none;
+    }
+}
+
+@keyframes expand {
+    from {
+        transform: scaleY(0);
+        display: block;
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
