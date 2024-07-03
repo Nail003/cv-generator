@@ -2,15 +2,19 @@
     min-width: 128px;
     padding: 8px 0;
     font-size: 1rem;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black-pure);
     border: 2px solid var(--black-pure);
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    transition: transform 250ms ease;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--grey);
+    border-color: var(--primary);
+}
+
+.button:hover {
+    transform: scale(1.1);
 }

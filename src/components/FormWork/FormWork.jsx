@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Input } from "../";
+import "./formWork.css";
 
 const FormWork = () => {
     return (
-        <form action="">
+        <form action="" className="form-work">
             <Card>
                 <Input label="Company Name" name="company-name" />
                 <Input label="Position Title" name="position-title" />

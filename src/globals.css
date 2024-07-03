@@ -19,9 +19,15 @@
     --white-glass: hsla(0, 0%, 100%, 0.8);
 
     --blue-dark: hsl(240, 100%, 5%);
+
+    --primary-dark: hsl(210, 50%, 35%);
+    --primary: hsl(200, 50%, 50%);
+    --primary-highlight: hsl(190, 50%, 65%);
+
+    --secondary: hsl(125, 50%, 50%);
 }
 
 body {
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black-pure);
+    background-color: var(--white);
 }
