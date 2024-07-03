@@ -1,10 +1,11 @@
 import React from "react";
-import { Card, Input } from "../";
+import { Card, Input } from "../..";
+import { Form } from "../";
 import "./formWork.css";
 
 const FormWork = () => {
     return (
-        <form action="" className="form-work">
+        <Form>
             <Card>
                 <Input label="Company Name" name="company-name" />
                 <Input label="Position Title" name="position-title" />
@@ -15,7 +16,7 @@ const FormWork = () => {
                 <Input label="From" name="work-start" type="date" />
                 <Input label="To" name="work-end" type="date" />
             </Card>
-        </form>
+        </Form>
     );
 };
 

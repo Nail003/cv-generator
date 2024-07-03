@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Card, Input } from "../";
+import { Card, Input } from "../../";
+import { Form } from "../";
 import "./formPersonal.css";
 
 const initialFormData = {
@@ -35,7 +36,7 @@ const FormPersonal = () => {
     }
 
     return (
-        <form action="" className="form-personal">
+        <Form>
             <Card>
                 <Input
                     label="First Name"
@@ -68,7 +69,7 @@ const FormPersonal = () => {
                     onChange={onChange("phone")}
                 />
             </Card>
-        </form>
+        </Form>
     );
 };
 

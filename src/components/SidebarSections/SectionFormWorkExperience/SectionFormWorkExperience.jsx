@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Button, FormWork } from "../";
+import { Button } from "../..";
+import { FormWork } from "../../Forms";
+import { SectionSidebar } from "../";
 import "./sectionFormWorkExperience.css";
 
 const SectionFormWorkExperience = () => {
@@ -9,12 +11,12 @@ const SectionFormWorkExperience = () => {
         setWorkForms((prev) => [...prev, false]);
     }
     return (
-        <section className="section-form-work-experience">
+        <SectionSidebar>
             <Button onClick={handleAddWork}>Add Work</Button>
             {workForms.map(() => (
                 <FormWork />
             ))}
-        </section>
+        </SectionSidebar>
     );
 };
 

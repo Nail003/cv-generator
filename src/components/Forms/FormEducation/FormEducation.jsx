@@ -1,10 +1,11 @@
 import React from "react";
-import { Card, Input } from "../";
+import { Card, Input } from "../../";
+import { Form } from "../";
 import "./formEducation.css";
 
 const FormEducation = () => {
     return (
-        <form action="" className="form-education">
+        <Form>
             <Card>
                 <div className="form-education__header">
                     <h2 className="form-education__title">Education</h2>
@@ -27,7 +28,7 @@ const FormEducation = () => {
                     />
                 </div>
             </Card>
-        </form>
+        </Form>
     );
 };
 

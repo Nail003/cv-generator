@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Button, FormEducation } from "../";
+import { Button } from "../../";
+import { FormEducation } from "../../Forms";
+import { SectionSidebar } from "../";
 import "./sectionFormEducation.css";
 
 const SectionFormEducation = () => {
@@ -10,12 +12,12 @@ const SectionFormEducation = () => {
     }
 
     return (
-        <section className="section-form-education">
+        <SectionSidebar>
             <Button onClick={handleAddEducation}>Add Education</Button>
             {educationForms.map(() => (
                 <FormEducation />
             ))}
-        </section>
+        </SectionSidebar>
     );
 };
 

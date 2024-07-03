@@ -1,16 +1,16 @@
+import { Collapser } from "../";
 import {
-    Collapser,
-    FormPersonal,
     SectionFormEducation,
+    SectionFormPersonalInfo,
     SectionFormWorkExperience,
-} from "../";
+} from "../SidebarSections";
 import "./sidebar.css";
 
 const Sidebar = () => {
     return (
         <section className="sidebar">
             <Collapser title="Personal Info">
-                <FormPersonal />
+                <SectionFormPersonalInfo />
             </Collapser>
             <Collapser title="Education">
                 <SectionFormEducation />
