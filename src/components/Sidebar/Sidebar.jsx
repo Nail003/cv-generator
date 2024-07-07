@@ -1,25 +1,14 @@
-import { Collapser } from "../";
-import {
-    SectionFormEducation,
-    SectionFormPersonalInfo,
-    SectionFormWorkExperience,
-} from "../SidebarSections";
-import "./sidebar.css";
+import React from "react";
+import "./Sidebar.css";
+import { SidebarAccordion } from "../Accordions";
+import { PersonalInfoForm } from "../Forms";
 
-const Sidebar = () => {
+export const Sidebar = ({ ...props }) => {
     return (
-        <section className="sidebar">
-            <Collapser title="Personal Info">
-                <SectionFormPersonalInfo />
-            </Collapser>
-            <Collapser title="Education">
-                <SectionFormEducation />
-            </Collapser>
-            <Collapser title="Work Experience">
-                <SectionFormWorkExperience />
-            </Collapser>
-        </section>
+        <div className="sidebar">
+            <SidebarAccordion title="Personal Info">
+                <PersonalInfoForm {...props} />
+            </SidebarAccordion>
+        </div>
     );
 };
-
-export default Sidebar;

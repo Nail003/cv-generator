@@ -1,0 +1,28 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-container__label {
+    font-size: 1rem;
+}
+
+.input-container__input {
+    font-size: 1rem;
+    padding: 4px;
+    color: var(--white);
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background-color: var(--black-highlight);
+}
+
+.input-container__input::placeholder {
+    color: var(--grey);
+}
+
+.input-container__input:focus {
+    border-color: var(--primary);
+}

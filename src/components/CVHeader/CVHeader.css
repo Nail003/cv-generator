@@ -1,0 +1,42 @@
+.cv-header {
+    width: 45ch;
+    padding: 16px;
+    color: var(--black);
+    word-wrap: break-word;
+}
+
+.cv-header__name-section {
+    margin-bottom: 32px;
+}
+
+.cv-header__name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cv-header__section-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 24px;
+}
+
+.cv-header__section-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 16px;
+}
+
+.cv-header__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cv-header__section-text {
+    max-width: 90%;
+    font-weight: bold;
+}

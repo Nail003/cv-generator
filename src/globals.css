@@ -2,32 +2,36 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: "Courier New", Courier, monospace;
 }
 
 :root {
-    --black-pure: hsl(0, 0%, 0%);
-    --black: hsl(0, 0%, 20%);
-    --black-glass: hsla(0, 0%, 0%, 0.5);
+    --black-pure: hsl(240, 0%, 0%);
+    --black: hsl(240, 10%, 20%);
+    --black-highlight: hsl(230, 10%, 30%);
 
-    --grey-dark: hsl(0, 0%, 30%);
-    --grey-dark-glass: hsla(0, 0%, 30%, 0.5);
-    --grey: hsl(0, 0%, 50%);
-    --grey-glass: hsla(0, 0%, 50%, 0.8);
-    --grey-light: hsl(0, 0%, 70%);
+    --grey: hsl(220, 10%, 50%);
 
-    --white: hsl(0, 0%, 100%);
-    --white-glass: hsla(0, 0%, 100%, 0.8);
+    --white: hsl(200, 100%, 100%);
 
-    --blue-dark: hsl(240, 100%, 5%);
+    --primary: hsl(200, 100%, 50%);
 
-    --primary-dark: hsl(210, 50%, 35%);
-    --primary: hsl(200, 50%, 50%);
-    --primary-highlight: hsl(190, 50%, 65%);
-
-    --secondary: hsl(125, 50%, 50%);
+    --secondary: hsl(30, 75%, 50%);
 }
 
 body {
-    color: var(--black-pure);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--black);
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--white);
+}
+
+h1 {
+    font-weight: 100;
 }

@@ -1,3 +1,17 @@
-.cv {
+.cv-container {
     flex: 2;
+    padding: 32px;
+}
+
+.cv {
+    display: flex;
+    flex-direction: row;
+}
+
+.cv__left {
+    background-color: var(--secondary);
+}
+
+.cv__right {
+    flex: 1;
 }

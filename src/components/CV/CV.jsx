@@ -1,8 +1,16 @@
 import React from "react";
-import "./cv.css";
+import "./CV.css";
+import { CVHeader } from "../CVHeader/CVHeader";
 
-const CV = () => {
-    return <div className="cv">CV</div>;
+export const CV = ({ personalInfo }) => {
+    return (
+        <div className="cv-container">
+            <div className="cv">
+                <div className="cv__left">
+                    <CVHeader {...{ personalInfo }} />
+                </div>
+                <div className="cv__right"></div>
+            </div>
+        </div>
+    );
 };
-
-export default CV;
