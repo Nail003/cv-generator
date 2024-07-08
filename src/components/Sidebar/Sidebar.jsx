@@ -1,7 +1,11 @@
 import React from "react";
 import "./Sidebar.css";
 import { SidebarAccordion } from "../Accordions";
-import { PersonalInfoForm, WorkExperienceFormList } from "../Forms";
+import {
+    EducationFormList,
+    PersonalInfoForm,
+    WorkExperienceFormList,
+} from "../Forms";
 
 export const Sidebar = (props) => {
     const {
@@ -9,6 +13,8 @@ export const Sidebar = (props) => {
         setPersonalInfo,
         workExperiences,
         setWorkExperiences,
+        educationList,
+        setEducationList,
     } = props;
     return (
         <div className="sidebar">
@@ -19,6 +25,9 @@ export const Sidebar = (props) => {
                 <WorkExperienceFormList
                     {...{ workExperiences, setWorkExperiences }}
                 />
+            </SidebarAccordion>
+            <SidebarAccordion title="Education">
+                <EducationFormList {...{ educationList, setEducationList }} />
             </SidebarAccordion>
         </div>
     );

@@ -3,3 +3,15 @@
     flex-direction: column;
     gap: 16px;
 }
+
+.cv-card__text {
+    font-weight: bold;
+}
+
+.cv-card__divider {
+    border-bottom: 2px solid var(--black);
+}
+
+.cv-card__date {
+    text-align: end;
+}

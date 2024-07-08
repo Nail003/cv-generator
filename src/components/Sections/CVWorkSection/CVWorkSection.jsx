@@ -1,17 +1,17 @@
 import React from "react";
+import { CVWorkExperience } from "../..";
+import { CVSection } from "../";
 import "./CVWorkSection.css";
-import { CVWorkExperience } from "../";
 
 export const CVWorkSection = ({ workExperiences }) => {
     return (
-        <section className="cv-work-section">
-            <h2 className="cv-work-section__title">Work Experience</h2>
+        <CVSection title="Work Experience">
             {workExperiences.map((workExperience) => (
                 <CVWorkExperience
                     key={workExperience.id}
                     {...{ workExperience }}
                 />
             ))}
-        </section>
+        </CVSection>
     );
 };

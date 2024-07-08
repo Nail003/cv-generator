@@ -1,4 +1,14 @@
 .sidebar {
-    flex: 1;
+    min-width: 45ch;
+    max-width: 75ch;
     border-right: 4px solid var(--white);
+}
+
+@media (width <= 1300px) {
+    .sidebar {
+        min-width: 0;
+        width: 100%;
+        max-width: none;
+        border: none;
+    }
 }

@@ -7,14 +7,14 @@ export const CVWorkExperience = ({ workExperience }) => {
         workExperience;
     return (
         <CVCard>
-            <div>
-                <h2 className="cv-work-experience__position">{position}</h2>
-                <h3 className="cv-work-experience__company">{companyName}</h3>
+            <div className="cv-card__divider">
+                <h2 className="cv-card__text">{position}</h2>
+                <h3 className="cv-card__text cv-work-experience__company">
+                    {companyName}
+                </h3>
             </div>
-            <p className="cv-work-experience__responsibility">
-                {responsibility}
-            </p>
-            <p className="cv-work-experience__date">
+            <p className="cv-card__text">{responsibility}</p>
+            <p className="cv-card__text cv-card__date">
                 {startDate} to {endDate ? endDate : "Present"}
             </p>
         </CVCard>

@@ -2,7 +2,7 @@ import React from "react";
 import "./WorkExperienceForm.css";
 import { Input } from "../../Inputs";
 import { FormCard } from "../../Cards/";
-import { ButtonOutlined } from "../../Buttons";
+import { FormListDeleteButton } from "../../Buttons";
 
 export const WorkExperienceForm = ({
     index = 0,
@@ -12,7 +12,7 @@ export const WorkExperienceForm = ({
     const { companyName, position, responsibility, startDate, endDate, id } =
         workExperience;
 
-    function handleChange(key) {
+    function onChange(key) {
         return (e) => {
             setWorkExperiences((prev) => {
                 prev[index][key] = e.target.value;
@@ -21,39 +21,32 @@ export const WorkExperienceForm = ({
         };
     }
 
-    function handleDelete(e) {
-        e.preventDefault();
-        setWorkExperiences((prev) => {
-            return prev.filter((current) => current.id !== id);
-        });
-    }
-
     return (
         <FormCard title={`Job ${index + 1}`}>
             <Input
                 title="Company Name"
                 name="companyName"
                 value={companyName}
-                onChange={handleChange("companyName")}
+                onChange={onChange("companyName")}
             />
             <Input
                 title="Position"
                 name="position"
                 value={position}
-                onChange={handleChange("position")}
+                onChange={onChange("position")}
             />
             <Input
                 title="Responsibility"
                 name="responsibility"
                 value={responsibility}
-                onChange={handleChange("responsibility")}
+                onChange={onChange("responsibility")}
             />
             <Input
                 title="Start"
                 name="startDate"
                 type="date"
                 value={startDate}
-                onChange={handleChange("startDate")}
+                onChange={onChange("startDate")}
             />
             <Input
                 title="End (leave empty for active job)"
@@ -61,9 +54,9 @@ export const WorkExperienceForm = ({
                 type="date"
                 placeholder="leave empty"
                 value={endDate}
-                onChange={handleChange("endDate")}
+                onChange={onChange("endDate")}
             />
-            <ButtonOutlined onClick={handleDelete}>Delete</ButtonOutlined>
+            <FormListDeleteButton setList={setWorkExperiences} {...{ id }} />
         </FormCard>
     );
 };

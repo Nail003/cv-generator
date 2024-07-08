@@ -6,32 +6,13 @@ import { Form } from "../Form/Form";
 export const PersonalInfoForm = ({ personalInfo, setPersonalInfo }) => {
     const { firstName, lastName, email, phone } = personalInfo;
 
-    function onChange(status) {
-        switch (status) {
-            case "firstName":
-                return (e) =>
-                    setPersonalInfo((prev) => {
-                        return { ...prev, firstName: e.target.value };
-                    });
-
-            case "lastName":
-                return (e) =>
-                    setPersonalInfo((prev) => {
-                        return { ...prev, lastName: e.target.value };
-                    });
-
-            case "email":
-                return (e) =>
-                    setPersonalInfo((prev) => {
-                        return { ...prev, email: e.target.value };
-                    });
-
-            case "phone":
-                return (e) =>
-                    setPersonalInfo((prev) => {
-                        return { ...prev, phone: e.target.value };
-                    });
-        }
+    function onChange(key) {
+        return (e) => {
+            setPersonalInfo((prev) => {
+                prev[key] = e.target.value;
+                return { ...prev };
+            });
+        };
     }
 
     return (

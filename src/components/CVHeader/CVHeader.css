@@ -1,5 +1,4 @@
 .cv-header {
-    width: 45ch;
     padding: 16px;
 
     color: var(--black);
@@ -39,6 +38,7 @@
 }
 
 .cv-header__section-text {
-    max-width: 90%;
+    flex: 1;
+    min-width: 0;
     font-weight: bold;
 }

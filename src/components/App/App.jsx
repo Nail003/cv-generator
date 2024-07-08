@@ -12,6 +12,7 @@ const initialPersonalInfo = {
 const App = () => {
     const [personalInfo, setPersonalInfo] = useState(initialPersonalInfo);
     const [workExperiences, setWorkExperiences] = useState([]);
+    const [educationList, setEducationList] = useState([]);
 
     return (
         <div className="app">
@@ -21,9 +22,11 @@ const App = () => {
                     setPersonalInfo,
                     workExperiences,
                     setWorkExperiences,
+                    educationList,
+                    setEducationList,
                 }}
             />
-            <CV {...{ personalInfo, workExperiences }} />
+            <CV {...{ personalInfo, workExperiences, educationList }} />
         </div>
     );
 };

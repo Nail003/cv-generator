@@ -1,8 +1,9 @@
 import React from "react";
 import "./CV.css";
-import { CVHeader, CVWorkSection } from "../";
+import { CVHeader } from "../";
+import { CVEducationSection, CVWorkSection } from "../Sections";
 
-export const CV = ({ personalInfo, workExperiences }) => {
+export const CV = ({ personalInfo, workExperiences, educationList }) => {
     return (
         <div className="cv-container">
             <div className="cv">
@@ -11,6 +12,7 @@ export const CV = ({ personalInfo, workExperiences }) => {
                 </div>
                 <div className="cv__right">
                     <CVWorkSection {...{ workExperiences }} />
+                    <CVEducationSection {...{ educationList }} />
                 </div>
             </div>
         </div>
