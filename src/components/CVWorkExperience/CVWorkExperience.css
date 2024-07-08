@@ -1,0 +1,26 @@
+.cv-work-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 8px;
+    border-radius: 8px;
+
+    color: var(--black);
+    background-color: var(--secondary);
+}
+.cv-work-experience__position,
+.cv-work-experience__company,
+.cv-work-experience__responsibility,
+.cv-work-experience__date {
+    font-weight: bold;
+}
+
+.cv-work-experience__company {
+    padding: 4px 0;
+    border-bottom: 2px solid var(--black);
+}
+
+.cv-work-experience__date {
+    text-align: end;
+}

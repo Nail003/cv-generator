@@ -1,0 +1,14 @@
+.accordion-container {
+    display: none;
+    transform-origin: top;
+}
+
+.accordion-container--expand {
+    display: block;
+    animation: expand 200ms ease-out forwards;
+}
+
+.accordion-container--collapse {
+    display: none;
+    animation: collapse 200ms ease-in forwards;
+}

@@ -32,6 +32,50 @@ button {
     color: var(--white);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+p {
     font-weight: 100;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4,
+p {
+    font-size: 1rem;
+}
+
+@keyframes expand {
+    from {
+        display: none;
+        transform: scaleY(0);
+    }
+    to {
+        display: block;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes collapse {
+    from {
+        display: block;
+        transform: scaleY(1);
+    }
+
+    to {
+        display: none;
+        transform: scaleY(0);
+    }
 }

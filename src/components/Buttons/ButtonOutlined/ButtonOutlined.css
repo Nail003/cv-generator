@@ -1,0 +1,9 @@
+.button-outlined {
+    border: 1px solid var(--white);
+}
+
+.button-outlined:hover,
+.button-outlined:focus {
+    background-color: var(--black-highlight);
+    border-color: var(--primary);
+}

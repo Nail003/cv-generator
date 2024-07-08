@@ -6,6 +6,7 @@
 .cv {
     display: flex;
     flex-direction: row;
+    gap: 32px;
 }
 
 .cv__left {

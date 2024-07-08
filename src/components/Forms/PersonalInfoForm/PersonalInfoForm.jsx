@@ -1,6 +1,7 @@
 import React from "react";
 import { Input } from "../../Inputs";
 import "./PersonalInfoForm.css";
+import { Form } from "../Form/Form";
 
 export const PersonalInfoForm = ({ personalInfo, setPersonalInfo }) => {
     const { firstName, lastName, email, phone } = personalInfo;
@@ -34,7 +35,7 @@ export const PersonalInfoForm = ({ personalInfo, setPersonalInfo }) => {
     }
 
     return (
-        <form action="" className="personal-info-form">
+        <Form>
             <Input
                 title="First Name"
                 name="firstName"
@@ -64,6 +65,6 @@ export const PersonalInfoForm = ({ personalInfo, setPersonalInfo }) => {
                 value={phone}
                 onChange={onChange("phone")}
             />
-        </form>
+        </Form>
     );
 };

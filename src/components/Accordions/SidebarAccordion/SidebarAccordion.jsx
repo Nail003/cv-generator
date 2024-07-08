@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./SidebarAccordion.css";
+import { AccordionButton } from "../../Buttons";
+import { AccordionContainer } from "../../Containers";
 
 export const SidebarAccordion = ({ title = "", children }) => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -10,23 +12,17 @@ export const SidebarAccordion = ({ title = "", children }) => {
 
     return (
         <div className="sidebar-accordion">
-            <button
+            <AccordionButton
                 className="sidebar-accordion__button"
                 onClick={toggleAccordion}
+                {...{ title, isExpanded }}
+            />
+            <AccordionContainer
+                className="sidebar-accordion__content-container"
+                {...{ isExpanded }}
             >
-                <h1 className="sidebar-accordion__title">{title}</h1>
-                <h1 className="sidebar-accordion__icon">
-                    {isExpanded ? "-" : "+"}
-                </h1>
-            </button>
-            <div
-                className={`sidebar-accordion__content-container ${
-                    isExpanded ? "expand" : "collapse"
-                }`}
-            >
-                {" "}
                 {children}
-            </div>
+            </AccordionContainer>
         </div>
     );
 };

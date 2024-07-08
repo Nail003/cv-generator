@@ -1,0 +1,7 @@
+.card-filled {
+    border-radius: 8px;
+    padding: 8px;
+
+    color: var(--black);
+    background-color: var(--secondary);
+}

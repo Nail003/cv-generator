@@ -11,11 +11,19 @@ const initialPersonalInfo = {
 
 const App = () => {
     const [personalInfo, setPersonalInfo] = useState(initialPersonalInfo);
+    const [workExperiences, setWorkExperiences] = useState([]);
 
     return (
         <div className="app">
-            <Sidebar {...{ personalInfo, setPersonalInfo }} />
-            <CV {...{ personalInfo }} />
+            <Sidebar
+                {...{
+                    personalInfo,
+                    setPersonalInfo,
+                    workExperiences,
+                    setWorkExperiences,
+                }}
+            />
+            <CV {...{ personalInfo, workExperiences }} />
         </div>
     );
 };

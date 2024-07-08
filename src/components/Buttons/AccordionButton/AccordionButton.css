@@ -1,0 +1,13 @@
+.accordion-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: var(--black-highlight);
+}

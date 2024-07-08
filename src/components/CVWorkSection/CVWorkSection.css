@@ -1,0 +1,11 @@
+.cv-work-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cv-work-section__title {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--secondary);
+    font-weight: normal;
+}

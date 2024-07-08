@@ -1,0 +1,29 @@
+.form-accordion__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.form-accordion__button:hover,
+.form-accordion__button:focus {
+    background-color: var(--black-highlight);
+}
+
+.form-accordion__content-container {
+    display: none;
+    transform-origin: top;
+}
+
+.form-accordion--expand {
+    display: block;
+    animation: expand 200ms ease-out forwards;
+}
+
+.form-accordion--collapse {
+    display: none;
+    animation: collapse 200ms ease-in forwards;
+}
