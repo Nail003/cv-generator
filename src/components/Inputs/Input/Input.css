@@ -20,7 +20,7 @@
 }
 
 .input-container__input::placeholder {
-    color: var(--grey);
+    color: var(--grey-light);
 }
 
 .input-container__input:focus {

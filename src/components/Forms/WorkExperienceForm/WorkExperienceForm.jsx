@@ -26,18 +26,21 @@ export const WorkExperienceForm = ({
             <Input
                 title="Company Name"
                 name="companyName"
+                placeholder="Google"
                 value={companyName}
                 onChange={onChange("companyName")}
             />
             <Input
                 title="Position"
                 name="position"
+                placeholder="Janitor"
                 value={position}
                 onChange={onChange("position")}
             />
             <Input
                 title="Responsibility"
                 name="responsibility"
+                placeholder="Cleaning up everybody's mess"
                 value={responsibility}
                 onChange={onChange("responsibility")}
             />

@@ -20,18 +20,21 @@ export const EducationForm = ({ index = 0, education, setEducationList }) => {
             <Input
                 title="Course Name"
                 name="courseName"
+                placeholder="Web development"
                 value={courseName}
                 onChange={onChange("courseName")}
             />
             <Input
                 title="School Name"
                 name="schoolName"
+                placeholder="Odin Project"
                 value={schoolName}
                 onChange={onChange("schoolName")}
             />
             <Input
                 title="Grade"
                 name="grade"
+                placeholder="A+"
                 value={grade}
                 onChange={onChange("grade")}
             />
