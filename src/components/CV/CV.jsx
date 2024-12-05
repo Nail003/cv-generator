@@ -1,7 +1,7 @@
 import React from "react";
-import "./CV.css";
 import { CVHeader } from "../";
 import { CVEducationSection, CVWorkSection } from "../Sections";
+import "./CV.css";
 
 export const CV = ({ personalInfo, workExperiences, educationList }) => {
     return (

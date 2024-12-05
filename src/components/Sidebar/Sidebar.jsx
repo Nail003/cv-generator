@@ -6,6 +6,7 @@ import {
     PersonalInfoForm,
     WorkExperienceFormList,
 } from "../Forms";
+import { ButtonCvDownload } from "../Buttons";
 
 export const Sidebar = (props) => {
     const {
@@ -29,6 +30,7 @@ export const Sidebar = (props) => {
             <SidebarAccordion title="Education">
                 <EducationFormList {...{ educationList, setEducationList }} />
             </SidebarAccordion>
+            <ButtonCvDownload />
         </div>
     );
 };
