@@ -14,7 +14,7 @@ CV Generator is an online application that lets you create a professional and ae
 
 ## Live Demo
 
-Experience the app live: [CV Generator Live](https://nail003.github.io)
+Experience the app live: [CV Generator Live](https://nail003.github.io/cv-generator)
 
 ## Features
 
@@ -65,10 +65,6 @@ This command will build the project and deploy it to your GitHub repository’s 
 ## Acknowledgements
 
 - [The Odin Project](https://www.theodinproject.com) – for providing the educational resources that helped shape this project.
-
-## Feedback
-
-If you encounter any bugs or have suggestions for improvement, please feel free to report them via my [LinkedIn profile](https://www.linkedin.com/in/danial-zafar-dev).
 
 ## About
 
