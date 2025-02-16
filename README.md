@@ -19,7 +19,6 @@ Experience the app live: [CV Generator Live](https://nail003.github.io)
 ## Features
 
 - **Intuitive Interface:** Easily input your personal details, education, work experience, and skills.
-- **Customizable Templates:** Choose from a variety of modern templates to best reflect your style.
 - **Real-Time Preview:** Instantly see your CV as you build it.
 - **Free to Use:** Generate a beautiful CV without any cost.
 
@@ -76,5 +75,3 @@ If you encounter any bugs or have suggestions for improvement, please feel free 
 This CV Generator was created as part of my TOP assignment. It combines creative design with practical coding to provide an easy-to-use tool for generating standout CVs.
 
 ---
-
-Feel free to adjust any section or add additional details as your project evolves!
